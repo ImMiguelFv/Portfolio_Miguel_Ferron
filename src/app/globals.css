@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body{
-  @apply bg-slate-950 text-slate-50
+  @apply bg-slate-950 text-slate-950
 }
 input textarea{
-  @apply bg-slate-800 text-slate-50
+  @apply bg-slate-800 text-slate-950
 }
