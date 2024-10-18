@@ -1,26 +1,28 @@
 {
   "name": "portfolio_miguel_ferron",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Mi portfolio personal",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImMiguelFv/Portfolio_Miguel_Ferron.git"
+  },
+  "keywords": [
+    "web",
+    "portfolio"
+  ],
+  "author": "Miguel Ángel Ferrón Viñuela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImMiguelFv/Portfolio_Miguel_Ferron/issues"
+  },
+  "homepage": "https://github.com/ImMiguelFv/Portfolio_Miguel_Ferron#readme",
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.15"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "nodemon": "^3.1.7",
+    "resend": "^4.0.0"
   }
 }
