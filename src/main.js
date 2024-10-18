@@ -6,7 +6,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const message = document.getElementById('message').value;
 
     try {
-        const response = await fetch('/api/sendMail', {
+        const response = await fetch('./api/sendMail', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, subject, message })
