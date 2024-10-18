@@ -11,27 +11,25 @@ export default async function (req, res) {
     return res.status(400).json({ message: 'Faltan parámetros' });
   }
 
-  // Configuración de tu transportador SMTP (puede ser Gmail u otro servicio)
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.EMAIL_USER, // Tu correo de envío
-      pass: process.env.EMAIL_PASS, // La contraseña o app password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   try {
-    // Envío del correo
     await transporter.sendMail({
-      from: email, // El remitente será el correo del usuario que completa el formulario
-      to: process.env.EMAIL_USER, // Este es tu correo, donde recibirás los mensajes
-      subject: `[Contacto Portafolio] ${subject}`, // Asunto del correo
-      text: `Mensaje de: ${email}\n\n${message}`, // Cuerpo del mensaje
+      from: email,
+      to: process.env.EMAIL_USER,
+      subject: `[Contacto Portafolio] ${subject}`,
+      text: `Mensaje de: ${email}\n\n${message}`,
     });
 
     res.status(200).json({ message: 'Correo enviado correctamente' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Error al enviar el correo', error: error.message });
-}
+  }
 }
