@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+    <div class="correo">
+        <form action="https://formspree.io/f/meoqoeaq" method="POST" id="contactForm" class="contactForm">
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" required placeholder="example@gmail.com">
+
+            <label for="full-name">Nombre y Apellidos</label>
+            <input type="text" name="name" id="full-name" placeholder="Nombre y apellidos" required="">
+
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div class="plataformas">
+        <p>Plataformas de contacto</p>
+        <a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-ferr%C3%B3n-vi%C3%B1uela/" target="_blank"><img src="/assets/icons/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/ImMiguelFv" target="_blank"><img src="/assets/icons/github.png" alt="github"></a>
+        <a class="cv" href="/assets/docs/CV_Miguel_Ferron.pdf" download="CV_Miguel_Ferron.pdf">Descarga Mi CV</a>
+
+    </div>
+</section>
+</body>
+</html>

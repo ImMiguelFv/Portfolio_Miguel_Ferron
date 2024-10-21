@@ -1,73 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <style>
-        .correo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .contactForm {
-            width: 700px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-        }
-
-        label {
-            margin-bottom: 10px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        textarea {
-            width: 100%;
-            height: 150px; /* Altura fija */
-            resize: none; /* Desactiva la opción de redimensionar */
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #00ffb3;
-            color: rgb(0, 0, 0);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #007a56;
-        }
-    </style>
+    <title>Portfolio</title>
+   
 </head>
 <body>
-    
-    <div class="correo">
-        <form action="https://formspree.io/f/meoqoeaq" method="POST" id="contactForm" class="contactForm">
-            <label for="email">Email:</label>
-            <input name="email" id="email" type="email" required placeholder="example@gmail.com">
-
-            <label for="full-name">Nombre y Apellidos</label>
-            <input type="text" name="name" id="full-name" placeholder="Nombre y apellidos" required="">
-
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        
+    </section>
 </body>
 </html>
