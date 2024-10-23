@@ -1,7 +1,7 @@
 {
   "name": "portfolio_miguel_ferron",
   "version": "1.0.0",
-  "main": "/src/index.html",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,3 +10,4 @@
   "license": "ISC",
   "description": ""
 }
+a
